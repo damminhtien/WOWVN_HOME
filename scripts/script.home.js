@@ -12,34 +12,27 @@ $('#worldmap').mapster({
         $("#des_area").html("");
     },
     onMouseover: function(e){
-        $("#des_area").html(description[e.key]);
-        var newTooltip = defaultToolTip;
-        if(e.key == "NT") newToolTip = "Vùng đất ở giữa";
-        if(e.key == "KLD") newToolTip = "Vùng đất phía tây";
-        if(e.key == "PD") newToolTip = "Vùng đất phía nam";
-        if(e.key == "HS") newToolTip = "Vùng đất phía tây";
-        if(e.key == "EK") newToolTip = "Vùng đất phía đông";
         $('#worldmap').mapster('set_options', { 
             areas: [
             {
                 key: "NT",
-                toolTip: newToolTip
+                toolTip: "Vùng đất phía Bắc"
             },
             {
                 key: "KLD",
-                toolTip: newToolTip
+                toolTip: "Vùng đất phía Tây"
             },
             {
                 key: "HS",
-                toolTip: newToolTip
+                toolTip: "Vùng đất ở giữa"
             },
             {
                 key: "EK",
-                toolTip: newToolTip
+                toolTip: "Vùng đất phía Đông"
             },
             {
                 key: "PD",
-                toolTip: newToolTip
+                toolTip: "Vùng đất phía Nam"
             }]
         });
     },
