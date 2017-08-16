@@ -8,6 +8,7 @@
 body {
     background: url('../images/home-bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* css ten web */
