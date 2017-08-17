@@ -16,11 +16,11 @@ $('#worldmap').mapster({
             areas: [
             {
                 key: "NT",
-                toolTip: "Vùng đất phía Bắc"
+                toolTip: "Northrend là lục địa phía bắc, băng giá của thế giới Azeroth, là lãnh địa của binh đoàn Scourge, ngự trị bởi Lich King. Lục địa này được đặc trưng trong World of Warcraft mở rộng, World of Warcraft: Wrath of the Lich King."
             },
             {
                 key: "KLD",
-                toolTip: "Vùng đất phía Tây"
+                toolTip: "Thuở sơ khai, Kalimdor (còn được gọi là \"Ancient Kalimdor\") là tên của lục địa duy nhất của thế giới, sau này được chia thành bốn lục địa chính (được biết đến cho đến nay). Kalimdor được đặt thành tên của lục địa phía tây Great sea, ngôi nhà của loài Night Elf và một số chủng loài cổ xưa của thế giới. Kalimdor ẩn chứa nhiều câu chuyện kì bí về những nền văn minh cổ đại và những câu chuyện thần thoại xưa cũ."
             },
             {
                 key: "HS",
@@ -28,11 +28,11 @@ $('#worldmap').mapster({
             },
             {
                 key: "EK",
-                toolTip: "Vùng đất phía Đông"
+                toolTip: "The Eastern Kingdoms là các lục địa phía đông trên thế giới Azeroth. The Eastern Kingdoms được tạo thành từ một nhóm các lục địa nhỏ hơn (Azeroth - lục địa của vương quốc Stormwind, Khaz Modan và Lordaeron) được hình thành từ lục địa ban đầu của Kalimdor sau sự kiện Great Sundering. The Eastern Kingdoms nằm về phía đông của Great sea và phía tây của Forbidding sea. The Eastern Kingdoms đã từng là chiến trường lớn của thế giới, nơi những chủng loài ma thuật, con người và cả loài Orc - những kẻ đến từ thế giới khác đua nhau giành giật các vương quốc bị chia cắt vì chiến tranh. Giờ đây lục địa này đang phục hồi dần trong sự nhân đạo và danh dự của hai phe Alliance và Horde."
             },
             {
                 key: "PD",
-                toolTip: "Vùng đất phía Nam"
+                toolTip: "Pandaria là lục địa huyền thoại của những cánh rừng bambus và những bí ẩn của Đế quốc Pandaren hùng mạnh nằm ở các đại dương phía Nam của Azeroth. Được che khuất bởi sương mù của Shaohao kể từ khi thế giới bị chia cắt hơn mười ngàn năm trước, vùng đất cổ xưa của Pandaria mang nhiều bí mật và sức mạnh kì lạ. Lục địa này được đặc trưng trong World of Warcraft mở rộng, World of Warcraft: Mist of Pandaria."
             }]
         });
     },
