@@ -7,10 +7,7 @@ $('#worldmap').mapster({
     strokeColor: 'cc00ff',
     scaleMap: false,
     showToolTip: true,
-    toolTipClose: ["tooltip-click", "area-click"],
-    onMouseout: function(e){
-        $("#des_area").html("");
-    },
+    toolTipClose: ["tooltip-click", "area-click","area-mouseout"],
     onMouseover: function(e){
         $('#worldmap').mapster('set_options', { 
             areas: [
@@ -43,8 +40,8 @@ $('#worldmap').mapster({
      	altImage: 'images/5.jpg',
     },
     render_select: {
-        fillColor: 'ff000c',
-        stroke: false
+        stroke: false,
+        fillOpacity: 0
     },
     fade: true,
     fadeDuration: 1200,
