@@ -1,0 +1,34 @@
+@font-face {
+    font-family: lifecraft;
+    src: url(../fonts/LifeCraft_Font.ttf);
+}
+
+@font-face {
+    font-family: evencommonspeak;
+    src: url(../fonts/evencommonspeak.ttf);
+}
+
+@font-face {
+    font-family: elwish_ring;
+    src: url(../fonts/elwish_ring.ttf);
+}
+
+@font-face {
+    font-family: folkard;
+    src: url(../fonts/folkard_.ttf);
+}
+
+@font-face {
+    font-family: morpheus;
+    src: url(../fonts/MORPHEUS.TTF);
+}
+
+@font-face {
+    font-family: viking1;
+    src: url(../fonts/viking_younger_runes_.ttf);
+}
+
+@font-face {
+    font-family: viking2;
+    src: url(../fonts/viking_younger_runes_bold.ttf);
+}

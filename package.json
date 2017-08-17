@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/damminhtien/wow_vn/issues"
   },
-  "homepage": "https://github.com/damminhtien/wow_vn#readme"
+  "homepage": "https://github.com/damminhtien/wow_vn#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }
