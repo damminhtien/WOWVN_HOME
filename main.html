@@ -12,11 +12,18 @@
 </head>
 
 <body>
+	<div class="loading">
+		<img src="images/arthas.gif">
+		<div class="blizzard">
+			<img src="images/blizzard.png" id="blizzard">
+		</div>
+	</div>
+	<div class="main-container">
+
     <div id="title">
         <img style="position: fixed; z-index: 2; right: 0;" src="images/Arthas_sword.png" alt="Arthas_sword" height="180px" class="spinner">
         <div id="nameweb">
-            WARCRAFT
-            <br/> VIETNAM COMMUNITY
+            <img src="images/logo.png">
         </div>
         <div id="menu">
             <ul>
@@ -109,7 +116,38 @@
             Một sản phẩm của HYG-corporation
         </div>
     </div>
+
+	</div>
+<!--script-->
+<script type="text/javascript">
+		$(document).ready(function(){
+		function blizzardOpa(){
+			$('.blizzard').css('opacity','1');
+		}
+		function loadingOpa1(){
+			$('.loading').css('opacity','1');
+		}
+		function loadingOpa2(){
+			$('.loading').css('opacity','0');
+		}
+		function loadingDisplay(){
+			$('.loading').css('display','none');
+		}
+		function mainDisplay(){
+			$('.main-container').css('display','block');
+		}
+		setTimeout(loadingOpa1,500);
+		setTimeout(blizzardOpa,1500);
+		setTimeout(loadingOpa2,2700);
+		setTimeout(loadingDisplay,4500);
+		setTimeout(mainDisplay,4500);	
+		
+	});
+</script>
+<script src="scripts/script.home.js">
+
+</script>
 </body>
-<script src="scripts/script.home.js"></script>
+
 
 </html>
