@@ -64,7 +64,7 @@ body {
 }
 
 #nameweb span{                              
-    background: linear-gradient(to bottom, #ffffff 0%, #666633 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #666632 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
