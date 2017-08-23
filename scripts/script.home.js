@@ -61,7 +61,7 @@ $('#worldmap').mapster({
         fillOpacity: 0
     },
     fade: true,
-    fadeDuration: 1200,
+    fadeDuration: 500,
     fadeInterval: 30
 });
 

@@ -7,7 +7,7 @@
 }
 
 .bigger {
-    animation-name: stroke-bigger;
+    animation-name: stroke;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -22,7 +22,7 @@
     }
 }
 
-@keyframes stroke-bigger {
+@keyframes stroke {
     100% {color: white;}
 }
 

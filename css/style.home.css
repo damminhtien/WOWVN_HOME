@@ -41,12 +41,27 @@ body {
 /* css ten web */
 
 #nameweb {
-    height: 250px;
+    height: 240px;
     padding: 15px;
-    width: 30%;
+    width: 85%;
 }
+
 #nameweb img{
-    width: 100%;
+    float: right;
+    width: 35%;
+}
+
+#nameweb span{                              
+    background: linear-gradient(to top, #666699 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    float: left;
+    font-size: 50px;
+    font-family: lifecraft, sans-serif;
+    padding: 30px;
+    width: 35%;
+    color: white;
 }
 
 /* css ban do */
