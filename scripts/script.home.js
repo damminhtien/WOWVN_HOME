@@ -15,6 +15,25 @@ $(document).ready(function() {
     }
 });
 
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+        $('#up-bar').show();
+    } else {
+        $('#up-bar').hide();
+    }
+    if (y > 600) {
+        $('#content').fadeIn(2500);
+    } else {
+        $('#content').fadeOut();
+    }
+    if (y > 1400) {
+        $('.hvr-ripple-in').fadeIn(2500);
+    } else {
+        $('.hvr-ripple-in').fadeOut();
+    }
+});
+
 var defaultToolTip = "Bản đồ World of Warcraft gồm 5 vùng";
 
 $('#worldmap').mapster({
