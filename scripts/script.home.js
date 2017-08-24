@@ -1,4 +1,28 @@
 $(document).ready(function() {
+    function blizzardOpa() {
+        $('.blizzard').css('opacity', '1');
+    }
+
+    function loadingOpa1() {
+        $('.loading').css('opacity', '1');
+    }
+
+    function loadingOpa2() {
+        $('.loading').css('opacity', '0');
+    }
+
+    function loadingDisplay() {
+        $('.loading').css('display', 'none');
+    }
+
+    function mainDisplay() {
+        $('.main-container').css('display', 'block');
+    }
+    setTimeout(loadingOpa1, 500);
+    setTimeout(blizzardOpa, 1500);
+    setTimeout(loadingOpa2, 2700);
+    setTimeout(loadingDisplay, 4500);
+    setTimeout(mainDisplay, 4500);
     var myIndex = 0;
     carousel();
 
@@ -16,26 +40,6 @@ $(document).ready(function() {
 });
 
 $(document).scroll(function() {
-    function blizzardOpa(){
-            $('.blizzard').css('opacity','1');
-        }
-        function loadingOpa1(){
-            $('.loading').css('opacity','1');
-        }
-        function loadingOpa2(){
-            $('.loading').css('opacity','0');
-        }
-        function loadingDisplay(){
-            $('.loading').css('display','none');
-        }
-        function mainDisplay(){
-            $('.main-container').css('display','block');
-        }
-        setTimeout(loadingOpa1,500);
-        setTimeout(blizzardOpa,1500);
-        setTimeout(loadingOpa2,2700);
-        setTimeout(loadingDisplay,4500);
-        setTimeout(mainDisplay,4500);
     var y = $(this).scrollTop();
     if (y > 200) {
         $('#up-bar').show();
