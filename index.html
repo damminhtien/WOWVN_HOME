@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Loading</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/styleloading.css">
-	<script src="scripts/jquery-1.6.2.min.js"></script>
+    <title>Loading</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styleloading.css">
+    <script src="scripts/jquery-1.6.2.min.js"></script>
 </head>
+
 <body>
-<div class="loading">
-    <img src="images/arthas.gif">
-    <div class="blizzard">
-        <img src="images/blizzard.png" id="blizzard">
+    <div class="loading">
+        <img src="images/arthas.gif">
+        <div class="blizzard">
+            <img src="images/blizzard.png" id="blizzard">
+        </div>
     </div>
-</div>
     <script type="text/javascript">
-    	$(document).ready(function(){
-		var lO1, bO, lO2, lD, mD;
-	    function blizzardOpa() {
-	        $('.blizzard').css('opacity', '1');
-	        clearTimeout(bO);
-	    }
+    $(document).ready(function() {
+        var lO1, bO, lO2, lD, mD;
 
-	    function loadingOpa1() {
-	        $('.loading').css('opacity', '1');
-	        clearTimeout(lO1);
-	    }
+        function blizzardOpa() {
+            $('.blizzard').css('opacity', '1');
+            clearTimeout(bO);
+        }
 
-	    function loadingOpa2() {
-	        $('.loading').css('opacity', '0');
-	        clearTimeout(lO2);
-	    }
+        function loadingOpa1() {
+            $('.loading').css('opacity', '1');
+            clearTimeout(lO1);
+        }
 
-	    function loadingDisplay() {
-	        window.open('main.html','_self');
-	        clearTimeout(lD);
-	    }
-	    lO1 = setTimeout(loadingOpa1, 0);
-	    bO = setTimeout(blizzardOpa, 500);
-	    lO2 = setTimeout(loadingOpa2, 2700);
-	    lD = setTimeout(loadingDisplay, 4500);
-	});
+        function loadingOpa2() {
+            $('.loading').css('opacity', '0');
+            clearTimeout(lO2);
+        }
+
+        function loadingDisplay() {
+            window.open('main.html', '_self');
+            clearTimeout(lD);
+        }
+        lO1 = setTimeout(loadingOpa1, 0);
+        bO = setTimeout(blizzardOpa, 500);
+        lO2 = setTimeout(loadingOpa2, 2700);
+        lD = setTimeout(loadingDisplay, 4500);
+    });
     </script>
 </body>
+
 </html>
