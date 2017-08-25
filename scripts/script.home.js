@@ -1,28 +1,35 @@
 $(document).ready(function() {
+    var lO1, bO, lO2, lD, mD;
+
     function blizzardOpa() {
         $('.blizzard').css('opacity', '1');
+        clearTimeout(bO);
     }
 
     function loadingOpa1() {
         $('.loading').css('opacity', '1');
+        clearTimeout(lO1);
     }
 
     function loadingOpa2() {
         $('.loading').css('opacity', '0');
+        clearTimeout(lO2);
     }
 
     function loadingDisplay() {
         $('.loading').css('display', 'none');
+        clearTimeout(lD);
     }
 
     function mainDisplay() {
         $('.main-container').css('display', 'block');
+        clearTimeout(mD);
     }
-    setTimeout(loadingOpa1, 500);
-    setTimeout(blizzardOpa, 1500);
-    setTimeout(loadingOpa2, 2700);
-    setTimeout(loadingDisplay, 4500);
-    setTimeout(mainDisplay, 4500);
+    lO1 = setTimeout(loadingOpa1, 1);
+    bO = setTimeout(blizzardOpa, 1500);
+    lO2 = setTimeout(loadingOpa2, 2700);
+    lD = setTimeout(loadingDisplay, 4500);
+    mD = setTimeout(mainDisplay, 4500);
     var myIndex = 0;
     carousel();
 
