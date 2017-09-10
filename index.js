@@ -5,7 +5,7 @@ app.use(express.static("./public"));
 app.set("view engine","ejs");
 app.set("views","./views");
 
-app.listen(2211, function(){
+app.listen(process.env.PORT || 2211, function(){
     console.log("Server connected");
 });
 
