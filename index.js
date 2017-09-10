@@ -8,10 +8,6 @@ app.set("views","./views");
 var server = require("http").Server(app);
 server.listen(process.env.PORT || 3000);
 
-app.listen(process.env.PORT || 2211, function(){
-    console.log("Server connected");
-});
-
 app.get("/",function(req, res){
 	res.render("index");
 });
