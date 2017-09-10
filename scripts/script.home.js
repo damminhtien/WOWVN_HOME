@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+    $("#stopMusic").hide();
     var myIndex = 0;
     carousel();
 
@@ -14,11 +14,21 @@ $(document).ready(function() {
         x[myIndex - 1].style.display = "block";
         setTimeout(carousel, 2000);
     }
+
+    $("#playMusic").click(function(){
+        $("#playMusic").hide();
+        $("#stopMusic").show();
+    });
+
+    $("#stopMusic").click(function(){
+        $("#stopMusic").hide();
+        $("#playMusic").show();
+    });
 });
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 200) {
+    if (y > 150) {
         $('#up-bar').show();
     } else {
         $('#up-bar').hide();
@@ -91,11 +101,7 @@ function resize(maxWidth, maxHeight) {
         imgHeight = image.height(),
         newWidth = 0,
         newHeight = 0;
-    if (imgWidth / maxWidth > imgHeight / maxHeight) {
         newWidth = maxWidth;
-    } else {
-        newHeight = maxHeight;
-    }
     image.mapster('resize', newWidth, newHeight, 100);
 }
 
