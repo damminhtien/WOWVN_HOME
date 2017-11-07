@@ -1,4 +1,3 @@
-Đây là bản demo trang chủ cho wowvn.com
-Raw git:
-https://rawgit.com/
-https://github.com/damminhtien/WOWVN_HOME/blob/master/main.html
+# Warcarft VN Community's Demo main webpage
+* Jquery
+* Image Mapster JS
